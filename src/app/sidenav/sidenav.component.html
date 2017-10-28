@@ -1,0 +1,4 @@
+<h2>Components</h2>
+<div class="nav flex-column nav-pills mt-4">
+  <a  class="nav-link" *ngFor="let nav of navList" routerLink="{{nav | lowercase}}" [routerLinkActive]="['active']">{{nav}}</a>
+</div>

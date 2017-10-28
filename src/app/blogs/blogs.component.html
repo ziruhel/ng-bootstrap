@@ -1,0 +1,17 @@
+
+
+<div class="row">
+  <div class="col-md-6 blogs-item" *ngFor="let item of blogs">
+    <a href="" routerLink="/blogs/article/{{item.id}}/{{item.slug}}">
+      <figure [ngStyle]="{ 'background-image': 'url(' + imagePath + 'blogs/' + item.cover_photo + ')'}">
+      </figure>
+      <div class="caption">
+        <div class="blogs-type">{{item.slug}}</div>
+        <h4>{{item.title}}</h4>
+        <div class="blogs-text">
+          {{item.description}}
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

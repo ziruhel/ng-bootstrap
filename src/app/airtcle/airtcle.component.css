@@ -1,0 +1,14 @@
+.base-media  div{
+  margin-left: 5em;
+  position: relative;
+  min-height: 4em;
+}
+.base-media img{
+  width: 3.5em;
+  height: 3.5em;
+  position: absolute;
+  left: 0;
+}
+.base-media{
+  position: relative;
+}

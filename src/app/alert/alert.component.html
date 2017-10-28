@@ -1,0 +1,11 @@
+<!--<p>
+  <ngb-alert [dismissible]="true" type="success" (close)="closeAlert()" *ngIf="show">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>-->
+
+<p>
+  <ngb-alert [dismissible]="true" type="success" (close)="closeAlert($event)" *ngIf="show">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>

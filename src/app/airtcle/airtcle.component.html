@@ -1,0 +1,31 @@
+
+<div class="media">
+  <img class="mr-3 img-thumbnail" src="" alt="{{airtcle.user.first_name}}">
+  <div class="media-body">
+    <h5 class="mt-0">{{airtcle.user.first_name}}</h5>
+    {{airtcle.published_date | date:'mediumDate'}}
+  </div>
+</div>
+<hr>
+<div>
+  {{airtcle.description}}
+</div>
+<hr>
+{{totalComments}} Comments:
+<div class="base-media mb-3" *ngFor="let item of airtcle.comments">
+  <img class="mr-3 img-thumbnail" src="" alt="user">
+  <div class="media-body">
+    {{item.comment}}
+  </div>
+  <div class="media" *ngFor="let reply of item.comment_reply">
+    <img class="mr-3 img-thumbnail" src="" alt="reply">
+    <div class="media-body">
+      <small>{{reply.reply}}</small>
+    </div>
+  </div>
+</div>
+
+<pre>
+  {{airtcle | json}}
+</pre>
+
